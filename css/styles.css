@@ -1,3 +1,98 @@
-h1 {
-  color: blueviolet;
+.main-header {
+  text-align: center;
+  color: burlywood;
+}
+
+#alya {
+  color: black;
+}
+
+.selection-content {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.selection-btn {
+  height: 50px;
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.lightskyblue-color {
+  background-color: lightskyblue;
+  color: white;
+}
+
+.darkorange-color {
+  background-color: darkorange;
+  color: white;
+}
+
+.green-color {
+  background-color: green;
+}
+
+.luas-segitiga-header {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  background-color: aquamarine;
+  text-align: center;
+  margin: 2px;
+}
+
+.luas-segitiga-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.luas-segitiga-img {
+  height: 300px;
+  width: 300px;
+  background-image: url(https://df0b18phdhzpx.cloudfront.net/ckeditor_assets/pictures/1442530/original_752367.png);
+  background-size: cover;
+  background-position: center;
+  align-self: center;
+}
+
+.luas-segitiga-form-header {
+  text-align: center;
+}
+
+.input-wrapper {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.input-wrapper > input {
+  width: 70%;
+}
+
+input[type="number"] {
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.selection-btn-form {
+  height: 30px;
+  width: 15%;
+  border: none;
+  border-radius: 7px;
+  justify-items: center;
+}
+
+.main-content {
+  display: flex;
+}
+
+.main-content > aside {
+  flex: 1;
 }
