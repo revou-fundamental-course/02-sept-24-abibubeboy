@@ -3,22 +3,25 @@
   color: burlywood;
 }
 
-#alya {
+.alya {
   color: black;
+  text-indent: 20px;
+  text-align: left;
+  margin: 20px 5px;
 }
 
 .selection-content {
-  display: flex;
-  justify-content: space-evenly;
+  text-align: center;
 }
 
 .selection-btn {
   height: 50px;
-  width: 100%;
+  width: 80%;
   border: none;
   border-radius: 8px;
   font-size: 18px;
   font-family: "Times New Roman", Times, serif;
+  margin: 2px;
 }
 
 .lightskyblue-color {
@@ -40,7 +43,15 @@
   padding-bottom: 32px;
   background-color: aquamarine;
   text-align: center;
-  margin: 2px;
+  margin: 15px 0px;
+}
+
+.keliling-segitiga-header {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  background-color: aquamarine;
+  text-align: center;
+  margin: 15px 0px;
 }
 
 .luas-segitiga-content {
@@ -48,16 +59,44 @@
   flex-direction: column;
 }
 
+.keliling-segitiga-content {
+  display: flex;
+  flex-direction: column;
+}
+
 .luas-segitiga-img {
   height: 300px;
   width: 300px;
-  background-image: url(https://df0b18phdhzpx.cloudfront.net/ckeditor_assets/pictures/1442530/original_752367.png);
+  background-image: url(https://asset.kompas.com/crops/ZwOr6ZrEtAtid5uZmYhDFijYPa4=/175x161:1573x1094/750x500/data/photo/2022/03/09/62288763c6d64.png);
   background-size: cover;
   background-position: center;
   align-self: center;
 }
 
+.keliling-segitiga-img {
+  height: 300px;
+  width: 300px;
+  background-image: url(https://asset-a.grid.id/crop/0x0:0x0/x/photo/2021/01/15/1853786887.jpg);
+  background-size: cover;
+  background-position: center;
+  align-self: center;
+}
+
+#paragraph-rumus-article {
+  text-align: center;
+  font-weight: bold;
+  margin: 0;
+}
+
+#selection-paragraph-article {
+  line-height: 1.5;
+}
+
 .luas-segitiga-form-header {
+  text-align: center;
+}
+
+.keliling-segitiga-form-header {
   text-align: center;
 }
 
@@ -72,6 +111,17 @@
   width: 70%;
 }
 
+.input-wrapper-keliling {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.input-wrapper-keliling > input {
+  width: 80%;
+}
+
 input[type="number"] {
   padding: 12px 20px;
   margin: 8px 0;
@@ -82,8 +132,9 @@ input[type="number"] {
 }
 
 .selection-btn-form {
-  height: 30px;
-  width: 15%;
+  color: white;
+  height: 35px;
+  width: 20%;
   border: none;
   border-radius: 7px;
   justify-items: center;
@@ -95,4 +146,5 @@ input[type="number"] {
 
 .main-content > aside {
   flex: 1;
+  margin: 0px 5px;
 }
