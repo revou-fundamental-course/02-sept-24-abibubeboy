@@ -9,8 +9,10 @@
   <body>
     <header class="main-header">
       <h1>WELCOME TO THE KATIK BY ABIB!</h1>
-      <p class="paragraph-body-header" id="alya">
-        Haii kawan selamat mencoba katik :)
+      <p class="alya">
+        Haii kawan saya persembahkan sebuah web sederhana yang berfungsi untuk
+        menghitung nilai luas dan keliling segitiga dan juga jajar genjang.
+        Selamat mencoba katik by abib :)
       </p>
     </header>
 
@@ -27,12 +29,20 @@
       <section class="main-content">
         <aside>
           <header>
-            <h1 class="luas-segitiga-header">Luas Segitiga</h1>
+            <h1 class="luas-segitiga-header">LUAS SEGITIGA</h1>
           </header>
 
           <article class="luas-segitiga-content">
             <div class="luas-segitiga-img"></div>
             <p>Rumus luas segitiga yaitu:</p>
+            <p id="paragraph-rumus-article">L = 1/2 x a x t</p>
+            <p id="selection-paragraph-article">
+              Di mana: <br />
+              L = Luas <br />
+              a = Alas <br />
+              t = Tinggi <br />
+              <br
+            </p>
           </article>
 
           <hr />
@@ -43,11 +53,11 @@
             </header>
 
             <div class="input-wrapper">
-              <label for="Panjang-Alas">Panjang Alas:</label>
+              <label for="Panjang-Alas">Nilai Panjang Alas:</label>
               <input id="Panjang-Alas" type="number" />
             </div>
             <div class="input-wrapper">
-              <label for="Tinggi">Tinggi:</label>
+              <label for="Tinggi">Nilai Tinggi:</label>
               <input id="Tinggi" type="number" />
             </div>
 
@@ -60,35 +70,49 @@
               type="button"
               class="selection-btn-form green-color"
             >
-              Hitung
+              Mari Hitung
             </button>
           </form>
         </aside>
 
         <aside>
           <header>
-            <h1 class="luas-segitiga-header">Luas Segitiga</h1>
+            <h1 class="keliling-segitiga-header">KELILING SEGITIGA</h1>
           </header>
 
-          <article class="luas-segitiga-content">
-            <div class="luas-segitiga-img"></div>
-            <p>Rumus luas segitiga yaitu:</p>
+          <article class="keliling-segitiga-content">
+            <div class="keliling-segitiga-img"></div>
+            <p>Rumus keliling segitiga yaitu:</p>
+            <p id="paragraph-rumus-article">K = s1 + s2 + s3</p>
+            <p id="selection-paragraph-article">
+              Di mana: <br />
+              K = Keliling <br />
+              s1 = A <br />
+              s2 = B <br />
+              s3 = C
+            </p>
           </article>
 
           <hr />
 
           <form>
             <header>
-              <h1 class="luas-segitiga-form-header">Hitung Luas Segitiga</h1>
+              <h1 class="keliling-segitiga-form-header">
+                Hitung Keliling Segitiga
+              </h1>
             </header>
 
-            <div class="input-wrapper">
-              <label for="Panjang-Alas">Panjang Alas:</label>
-              <input id="Panjang-Alas" type="number" />
+            <div class="input-wrapper-keliling">
+              <label for="s1">Nilai s1:</label>
+              <input id="s1" type="number" />
             </div>
-            <div class="input-wrapper">
-              <label for="Tinggi">Tinggi:</label>
-              <input id="Tinggi" type="number" />
+            <div class="input-wrapper-keliling">
+              <label for="s2">Nilai s2:</label>
+              <input id="s2" type="number" />
+            </div>
+            <div class="input-wrapper-keliling">
+              <label for="s3">Nilai s3:</label>
+              <input id="s3" type="number" />
             </div>
 
             <p id="result"></p>
@@ -100,7 +124,7 @@
               type="button"
               class="selection-btn-form green-color"
             >
-              Hitung
+              Mari Hitung
             </button>
           </form>
         </aside>
