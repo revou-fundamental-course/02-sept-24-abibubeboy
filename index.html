@@ -36,43 +36,47 @@
             <div class="luas-segitiga-img"></div>
             <p>Rumus luas segitiga yaitu:</p>
             <p id="paragraph-rumus-article">L = 1/2 x a x t</p>
-            <p id="selection-paragraph-article">
-              Di mana: <br />
-              L = Luas <br />
-              a = Alas <br />
-              t = Tinggi <br />
-              <br
-            </p>
+            <p>Dimana: 
+              <ul>
+                  <li>L = Luas</li>
+                  <li>a = Panjang Alas</li>
+                  <li>t = Tinggi</li>
+              </ul>
+          </p>
+
+          <br>
+
           </article>
 
           <hr />
 
-          <form>
-            <header>
-              <h1 class="luas-segitiga-form-header">Hitung Luas Segitiga</h1>
+          <form action="">
+            <header class="header-form">
+                <h1>Hitung Luas Segitiga</h1>
             </header>
 
-            <div class="input-wrapper">
-              <label for="Panjang-Alas">Nilai Panjang Alas:</label>
-              <input id="Panjang-Alas" type="number" />
+            <div class="alas-segitiga">
+                <label for="panjang-alas">Panjang Alas</label>
+                <input type="number" id="panjang-alas-sg">
             </div>
-            <div class="input-wrapper">
-              <label for="Tinggi">Nilai Tinggi:</label>
-              <input id="Tinggi" type="number" />
+            <div class="tinggi-segitiga">
+                <label for="tinggi">Tinggi</label>
+                <input type="number" id="tinggi-sg">
             </div>
 
-            <p id="result"></p>
+            <p id="result">Hasil Perhitungan:</p>
 
-            <br />
+            <div id="output-luas-sg" style="display: none;">
+              <p>L = 1/2 x a x t</p>
+              <p>L = 1/2 x <span id="input-alas"></span> x <span id="input-tinggi"></span></p>
+              <p>L = <span id="luas-sg"></span></p>
+          </div>
 
-            <button
-              href="#"
-              type="button"
-              class="selection-btn-form green-color"
-            >
-              Mari Hitung
-            </button>
-          </form>
+          <br>
+
+          <button class="selection-btn-form green-color" id="hitung-luas-sg">Mari Hitung</button>
+          <button class="selection-btn-form red-color" type="reset" onclick="clearAnswer(event)">Reset</button>
+        </form>
         </aside>
 
         <aside>
@@ -84,13 +88,14 @@
             <div class="keliling-segitiga-img"></div>
             <p>Rumus keliling segitiga yaitu:</p>
             <p id="paragraph-rumus-article">K = s1 + s2 + s3</p>
-            <p id="selection-paragraph-article">
-              Di mana: <br />
-              K = Keliling <br />
-              s1 = A <br />
-              s2 = B <br />
-              s3 = C
-            </p>
+            <p>Dimana: 
+              <ul>
+                  <li>K = Keliling</li>
+                  <li>s1 = A</li>
+                  <li>s2 = B</li>
+                  <li>s3 = C</li>
+              </ul>
+          </p>
           </article>
 
           <hr />
@@ -102,33 +107,145 @@
               </h1>
             </header>
 
-            <div class="input-wrapper-keliling">
-              <label for="s1">Nilai s1:</label>
-              <input id="s1" type="number" />
-            </div>
-            <div class="input-wrapper-keliling">
-              <label for="s2">Nilai s2:</label>
-              <input id="s2" type="number" />
-            </div>
-            <div class="input-wrapper-keliling">
-              <label for="s3">Nilai s3:</label>
-              <input id="s3" type="number" />
-            </div>
+            <div class="sisi1-segitiga">
+              <label for="sisi1">s1</label>
+              <input type="number" id="sisi1-sg">
+          </div>
+          <div class="sisi2-segitiga">
+              <label for="sisi2">s2</label>
+              <input type="number" id="sisi2-sg">
+          </div>
+          <div class="sisi3-segitiga">
+              <label for="sisi3">s3</label>
+              <input type="number" id="alas-sg">
+          </div>
 
-            <p id="result"></p>
+          <p id="result">Hasil Perhitungan:</p>
 
-            <br />
+          <div id="output-kll-sg" style="display: none;">
+              <p>K = S1 + S2 + s3</p>
+              <p>K = <span id="input-sisi1-sg"></span> + <span id="input-sisi2-sg"></span> + <span id="input-alas-sg"></span></p>
+              <p>K = <span id="kll-sg"></span></p>
+          </div>
 
-            <button
-              href="#"
-              type="button"
-              class="selection-btn-form green-color"
-            >
-              Mari Hitung
-            </button>
+          <button class="selection-btn-form green-color" id="hitung-kll-sg">Mari Hitung</button>
           </form>
         </aside>
       </section>
+
+       <!-- Area Jajar Genjang -->
+
+       <section class="section" id="jajargenjang">
+        <aside class="aside-luas">
+            <header class="luas-tittle-content">
+                <h1>Luas Jajar Genjang</h1>
+            </header>
+
+            <article class="luas-jajargenjang-content">
+                <div class="luas-jajargenjang-img"></div>
+                <p>Rumus luas jajar genjang:</p>
+                <p id="paragraph-rumus-article">L = a x t</p>
+                <p>Dimana: 
+                    <ul>
+                        <li>L = Luas</li>
+                        <li>a = Panjang Alas</li>
+                        <li>t = Tinggi</li>
+                    </ul>
+                </p>
+
+            </article>
+
+            <hr>
+
+            <form action="">
+                <header class="header-form">
+                    <h1>Hitung Luas Jajar Genjang</h1>
+                </header>
+
+                <div class="alas-jajargenjang">
+                    <label for="panjang-alas">Panjang Alas</label>
+                    <input type="number" id="alas-jg">
+                </div>
+                <div class="panjang-jajargenjang">
+                    <label for="tinggi">Tinggi</label>
+                    <input type="number" id="tinggi-jg">
+                </div>
+
+                <p id="result">Hasil Perhitungan</p>
+
+                <div id="output-luas-jg" style="display: none;">
+                    <p>L = a x t</p>
+                    <p>L = <span id="input-alas-jg"></span> x <span id="input-tinggi-jg"></span></p>
+                    <p>L = <span id="luas-jg"></span></p>
+                </div>
+
+                <button class="selection-btn-form green-color" id="hitung-luas-jg">Mari Hitung</button>
+            </form>
+
+        </aside>
+
+        <aside class="aside-keliling">
+            <header class="keliling-tittle-content">
+                <h1>Keliling Jajar Genjang</h1>
+            </header>
+
+            <article class="keliling-jajargenjang-content">
+                <div class="keliling-jajargenjang-img"></div>
+                <p>Rumus keliling jajar genjang</p>
+                <p id="paragraph-rumus-article">K = AB + BC + CD +DA</p>
+                <p>Dimana: 
+                    <ul>
+                        <li>K = Keliling</li>
+                        <li>AB = AB</li>
+                        <li>BC = BC</li>
+                        <li>CD = CD</li>
+                        <li>DA = DA</li>
+                    </ul>
+                </p>
+            </article>
+
+            <hr>
+
+            <form action="">
+                <header class="header-form">
+                    <h1>Hitung Keliling Jajar Genjang</h1>
+                </header>
+
+                <div class="sisi1-jajargenjang">
+                    <label for="sisi1">AB</label>
+                    <input type="number" id="ab-jg">
+                </div>
+                <div class="sisi2-jajargenjang">
+                    <label for="sisi2">BC</label>
+                    <input type="number" id="bc-jg">
+                </div>
+                <div class="sisi3-jajargenjang">
+                    <label for="sisi3">CD</label>
+                    <input type="number" id="cd-jg">
+                </div>
+                <div class="sisi4-jajargenjang">
+                    <label for="sisi4">DA</label>
+                    <input type="number" id="da-jg">
+                </div>
+
+                <p id="result">Hasil Perhitungan</p>
+
+                <div id="output-kll-jg" style="display: none;">
+                    <p>K = AB + BC + CD + DA</p>
+                    <p>K = <span id="input-ab-jg"></span> + <span id="input-bc-jg"></span> + <span id="input-cd-jg"></span> + <span id="input-da-jg"></span></p>
+                    <p>K = <span id="kll-jg"></span>
+                </div>
+                <button class="selection-btn-form green-color" id="hitung-kll-jg">Mari Hitung</button>
+            </form>
+
+        </aside>
+    
+    </section>
+
+    <!-- Area Jajar Genjang -->
     </main>
+
+    <script src="./js/script.js"></script>
+
   </body>
 </html>

@@ -38,6 +38,10 @@
   background-color: green;
 }
 
+.red-color {
+  background-color: rgb(170, 4, 4);
+}
+
 .luas-segitiga-header {
   padding-top: 32px;
   padding-bottom: 32px;
@@ -92,7 +96,7 @@
   line-height: 1.5;
 }
 
-.luas-segitiga-form-header {
+.header-form {
   text-align: center;
 }
 
@@ -100,26 +104,59 @@
   text-align: center;
 }
 
-.input-wrapper {
+.alas-segitiga {
   width: 80%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.input-wrapper > input {
+.alas-segitiga input {
   width: 70%;
 }
 
-.input-wrapper-keliling {
+.tinggi-segitiga {
   width: 80%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.input-wrapper-keliling > input {
+.tinggi-segitiga input {
+  width: 70%;
+}
+
+.sisi1-segitiga {
   width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sisi1-segitiga input {
+  width: 70%;
+}
+
+.sisi2-segitiga {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sisi2-segitiga input {
+  width: 70%;
+}
+
+.sisi3-segitiga {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sisi3-segitiga input {
+  width: 70%;
 }
 
 input[type="number"] {
@@ -140,6 +177,14 @@ input[type="number"] {
   justify-items: center;
 }
 
+.output-luas-sg {
+  display: none;
+}
+
+.output-keliling-sg {
+  display: none;
+}
+
 .main-content {
   display: flex;
 }
@@ -147,4 +192,104 @@ input[type="number"] {
 .main-content > aside {
   flex: 1;
   margin: 0px 5px;
+}
+
+/*area jajar genjang*/
+
+.luas-tittle-content {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background-color: rgb(51, 108, 5);
+  color: white;
+  text-align: center;
+  margin: 15px 0px;
+}
+
+.keliling-tittle-content {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background-color: rgb(51, 108, 5);
+  color: white;
+  text-align: center;
+  margin: 15px 0px;
+}
+
+.luas-jajargenjang-img {
+  width: 320px;
+  height: 250px;
+  background-image: url(https://imgix2.ruangguru.com/assets/miscellaneous/png_b5ilxq_6544.png);
+  background-size: cover;
+  background-position: center;
+  align-self: center;
+}
+
+.keliling-jajargenjang-img {
+  width: 320px;
+  height: 250px;
+  background-image: url(https://imgix2.ruangguru.com/assets/miscellaneous/png_b5ilxq_6544.png);
+  background-size: cover;
+  background-position: center;
+  align-self: center;
+}
+
+.alas-jajargenjang {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.alas-jajargenjang input {
+  width: 70%;
+}
+
+.panjang-jajargenjang {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.panjang-jajargenjang input {
+  width: 70%;
+}
+
+.sisi1-jajargenjang,
+.sisi2-jajargenjang,
+.sisi3-jajargenjang,
+.sisi4-jajargenjang {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sisi1-jajargenjang input,
+.sisi2-jajargenjang input,
+.sisi3-jajargenjang input,
+.sisi4-jajargenjang input {
+  width: 70%;
+}
+
+.keliling-jajargenjang-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.section {
+  display: flex;
+}
+
+.section aside {
+  flex: 1;
+  margin: 0px 5px;
+}
+
+@media only screen and (max-width: 480px) {
+  .main-content {
+    flex-direction: column;
+  }
+  .section {
+    flex-direction: column;
+  }
 }
