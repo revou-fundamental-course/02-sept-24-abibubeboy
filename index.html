@@ -3,14 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title class="title-head">Uji Coba Mini Course</title>
+    <title class="title-head">Mini Course By Abib!</title>
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <header class="main-header">
       <h1>WELCOME TO THE KATIK BY ABIB!</h1>
       <p class="alya">
-        Haii kawan saya persembahkan sebuah web sederhana yang berfungsi untuk
+        Haii kawan-kawan, saya persembahkan sebuah web sederhana yang berfungsi untuk
         menghitung nilai luas dan keliling segitiga dan juga jajar genjang.
         Selamat mencoba katik by abib :)
       </p>
@@ -26,7 +26,10 @@
         </button>
       </section>
 
+       <!-- Area Awal Segitiga -->
       <section class="main-content">
+
+         <!-- Area Awal Rumus Luas Segitiga -->
         <aside>
           <header>
             <h1 class="luas-segitiga-header">LUAS SEGITIGA</h1>
@@ -43,33 +46,35 @@
                   <li>t = Tinggi</li>
               </ul>
           </p>
-
           <br>
-
           </article>
+           <!-- Area Akhir Rumus Luas Segitiga -->
 
           <hr />
 
+           <!-- Area Awal Input Luas Segitiga -->
           <form action="">
             <header class="header-form">
                 <h1>Hitung Luas Segitiga</h1>
             </header>
 
             <div class="alas-segitiga">
-                <label for="panjang-alas">Panjang Alas</label>
-                <input type="number" id="panjang-alas-sg">
+                <label for="panjang-alas"></label>
+                <input type="number" placeholder="Panjang Alas" id="panjang-alas-sg">
             </div>
             <div class="tinggi-segitiga">
-                <label for="tinggi">Tinggi</label>
-                <input type="number" id="tinggi-sg">
+                <label for="tinggi"></label>
+                <input type="number" placeholder="Tinggi" id="tinggi-sg">
             </div>
+             <!-- Area Akhir Input Luas Segitiga -->
 
+             <!-- Area Awal Output Luas Segitiga -->
             <p id="result">Hasil Perhitungan:</p>
 
             <div id="output-luas-sg" style="display: none;">
               <p>L = 1/2 x a x t</p>
               <p>L = 1/2 x <span id="input-alas"></span> x <span id="input-tinggi"></span></p>
-              <p>L = <span id="luas-sg"></span></p>
+              <p>Hasil L = <span id="luas-sg"></span></p>
           </div>
 
           <br>
@@ -78,7 +83,9 @@
           <button class="selection-btn-form red-color" type="reset" onclick="clearAnswer(event)">Reset</button>
         </form>
         </aside>
+         <!-- Area Akhir Output Luas  Segitiga -->
 
+         <!-- Area Awal Rumus Keliling Segitiga -->
         <aside>
           <header>
             <h1 class="keliling-segitiga-header">KELILING SEGITIGA</h1>
@@ -97,9 +104,11 @@
               </ul>
           </p>
           </article>
+           <!-- Area Akhir Rumus Keliling Segitiga -->
 
           <hr />
 
+           <!-- Area Awal Input Keliling Segitiga -->
           <form>
             <header>
               <h1 class="keliling-segitiga-form-header">
@@ -108,34 +117,41 @@
             </header>
 
             <div class="sisi1-segitiga">
-              <label for="sisi1">s1</label>
-              <input type="number" id="sisi1-sg">
+              <label for="sisi1"></label>
+              <input type="number" placeholder="Sisi 1" id="sisi1-sg">
           </div>
           <div class="sisi2-segitiga">
-              <label for="sisi2">s2</label>
-              <input type="number" id="sisi2-sg">
+              <label for="sisi2"></label>
+              <input type="number" placeholder="Sisi 2" id="sisi2-sg">
           </div>
           <div class="sisi3-segitiga">
-              <label for="sisi3">s3</label>
-              <input type="number" id="alas-sg">
+              <label for="sisi3"></label>
+              <input type="number" placeholder="Sisi 3" id="sisi3-sg">
           </div>
+           <!-- Area Akhir Input Keliling Segitiga -->
 
+           <!-- Area Awal Output Keliling Segitiga -->
           <p id="result">Hasil Perhitungan:</p>
 
           <div id="output-kll-sg" style="display: none;">
               <p>K = S1 + S2 + s3</p>
-              <p>K = <span id="input-sisi1-sg"></span> + <span id="input-sisi2-sg"></span> + <span id="input-alas-sg"></span></p>
-              <p>K = <span id="kll-sg"></span></p>
+              <p>K = <span id="input-sisi1-sg"></span> + <span id="input-sisi2-sg"></span> + <span id="input-sisi3-sg"></span></p>
+              <p>Hasil K = <span id="kll-sg"></span></p>
           </div>
 
           <button class="selection-btn-form green-color" id="hitung-kll-sg">Mari Hitung</button>
+          <button class="selection-btn-form red-color" type="reset" onclick="clearAnswer(event)">Reset</button>
+          <!-- Area Akhir Output Keliling Segitiga -->
+
           </form>
         </aside>
       </section>
+      <!-- Area Akhir Segitiga -->
 
-       <!-- Area Jajar Genjang -->
-
+       <!-- Awal Area Jajar Genjang -->
        <section class="section" id="jajargenjang">
+
+        <!-- Area Awal Rumus Luas Jajar Genjang -->
         <aside class="aside-luas">
             <header class="luas-tittle-content">
                 <h1>Luas Jajar Genjang</h1>
@@ -152,38 +168,43 @@
                         <li>t = Tinggi</li>
                     </ul>
                 </p>
-
             </article>
+            <!-- Area Akhir Rumus Luas Jajar Genjang -->
 
             <hr>
 
+            <!-- Area Awal Input Luas Jajar Genjang -->
             <form action="">
                 <header class="header-form">
                     <h1>Hitung Luas Jajar Genjang</h1>
                 </header>
 
                 <div class="alas-jajargenjang">
-                    <label for="panjang-alas">Panjang Alas</label>
-                    <input type="number" id="alas-jg">
+                    <label for="panjang-alas"></label>
+                    <input type="number" placeholder="Panjang Alas Jajar Genjang" id="alas-jg">
                 </div>
                 <div class="panjang-jajargenjang">
-                    <label for="tinggi">Tinggi</label>
-                    <input type="number" id="tinggi-jg">
+                    <label for="tinggi"></label>
+                    <input type="number" placeholder="Tinggi Jajar Genjang" id="tinggi-jg">
                 </div>
+                <!-- Area Akhir Input Luas  Jajar Genjang -->
 
+                <!-- Area Awal Output Luas Jajar Genjang -->
                 <p id="result">Hasil Perhitungan</p>
 
                 <div id="output-luas-jg" style="display: none;">
                     <p>L = a x t</p>
                     <p>L = <span id="input-alas-jg"></span> x <span id="input-tinggi-jg"></span></p>
-                    <p>L = <span id="luas-jg"></span></p>
+                    <p>Hasil L = <span id="luas-jg"></span></p>
                 </div>
 
                 <button class="selection-btn-form green-color" id="hitung-luas-jg">Mari Hitung</button>
+                <button class="selection-btn-form red-color" type="reset" onclick="clearAnswer(event)">Reset</button>
             </form>
-
         </aside>
+        <!-- Area Akhir Output Luas Jajar Genjang -->
 
+        <!-- Area Awal Rumus Keliling Jajar Genjang -->
         <aside class="aside-keliling">
             <header class="keliling-tittle-content">
                 <h1>Keliling Jajar Genjang</h1>
@@ -203,46 +224,50 @@
                     </ul>
                 </p>
             </article>
+            <!-- Area Akhir  Rumus Keliling Jajar Genjang -->
 
             <hr>
 
+            <!-- Area Awal Input Keliling  Jajar Genjang -->
             <form action="">
                 <header class="header-form">
                     <h1>Hitung Keliling Jajar Genjang</h1>
                 </header>
 
                 <div class="sisi1-jajargenjang">
-                    <label for="sisi1">AB</label>
-                    <input type="number" id="ab-jg">
+                    <label for="sisi1"></label>
+                    <input type="number" placeholder="Sisi 1 (AB)" id="ab-jg">
                 </div>
                 <div class="sisi2-jajargenjang">
-                    <label for="sisi2">BC</label>
-                    <input type="number" id="bc-jg">
+                    <label for="sisi2"></label>
+                    <input type="number" placeholder="Sisi 2 (BC)" id="bc-jg">
                 </div>
                 <div class="sisi3-jajargenjang">
-                    <label for="sisi3">CD</label>
-                    <input type="number" id="cd-jg">
+                    <label for="sisi3"></label>
+                    <input type="number" placeholder="Sisi 3 (CD)" id="cd-jg">
                 </div>
                 <div class="sisi4-jajargenjang">
-                    <label for="sisi4">DA</label>
-                    <input type="number" id="da-jg">
+                    <label for="sisi4"></label>
+                    <input type="number" placeholder="Sisi 4 (DA)" id="da-jg">
                 </div>
+                <!-- Area Akhir Input Keliling  Jajar Genjang -->
 
+                <!-- Area Awal Output Keliling Jajar Genjang -->
                 <p id="result">Hasil Perhitungan</p>
 
                 <div id="output-kll-jg" style="display: none;">
                     <p>K = AB + BC + CD + DA</p>
                     <p>K = <span id="input-ab-jg"></span> + <span id="input-bc-jg"></span> + <span id="input-cd-jg"></span> + <span id="input-da-jg"></span></p>
-                    <p>K = <span id="kll-jg"></span>
+                    <p>Hasil K = <span id="kll-jg"></span>
                 </div>
                 <button class="selection-btn-form green-color" id="hitung-kll-jg">Mari Hitung</button>
+                <button class="selection-btn-form red-color" type="reset" onclick="clearAnswer(event)">Reset</button>
+                <!-- Area Akhir Output Keliling Jajar Genjang -->
             </form>
-
         </aside>
-    
     </section>
+    <!-- Area Akhir Jajar Genjang -->
 
-    <!-- Area Jajar Genjang -->
     </main>
 
     <script src="./js/script.js"></script>

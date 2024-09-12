@@ -42,10 +42,21 @@
   background-color: rgb(170, 4, 4);
 }
 
+#paragraph-rumus-article {
+  text-align: center;
+  font-weight: bold;
+  margin: 0;
+}
+
+#selection-paragraph-article {
+  line-height: 1.5;
+}
+
+/* Area Segitiga */
 .luas-segitiga-header {
   padding-top: 32px;
   padding-bottom: 32px;
-  background-color: aquamarine;
+  background-color: lightskyblue;
   text-align: center;
   margin: 15px 0px;
 }
@@ -53,7 +64,7 @@
 .keliling-segitiga-header {
   padding-top: 32px;
   padding-bottom: 32px;
-  background-color: aquamarine;
+  background-color: lightskyblue;
   text-align: center;
   margin: 15px 0px;
 }
@@ -84,16 +95,6 @@
   background-size: cover;
   background-position: center;
   align-self: center;
-}
-
-#paragraph-rumus-article {
-  text-align: center;
-  font-weight: bold;
-  margin: 0;
-}
-
-#selection-paragraph-article {
-  line-height: 1.5;
 }
 
 .header-form {
@@ -194,12 +195,11 @@ input[type="number"] {
   margin: 0px 5px;
 }
 
-/*area jajar genjang*/
-
+/* Area Jajar Genjang */
 .luas-tittle-content {
   padding-top: 25px;
   padding-bottom: 25px;
-  background-color: rgb(51, 108, 5);
+  background-color: darkorange;
   color: white;
   text-align: center;
   margin: 15px 0px;
@@ -208,7 +208,7 @@ input[type="number"] {
 .keliling-tittle-content {
   padding-top: 25px;
   padding-bottom: 25px;
-  background-color: rgb(51, 108, 5);
+  background-color: darkorange;
   color: white;
   text-align: center;
   margin: 15px 0px;
@@ -276,6 +276,7 @@ input[type="number"] {
   flex-direction: column;
 }
 
+/* Aside /  Dua Layar*/
 .section {
   display: flex;
 }
@@ -285,6 +286,7 @@ input[type="number"] {
   margin: 0px 5px;
 }
 
+/* Responsive */
 @media only screen and (max-width: 480px) {
   .main-content {
     flex-direction: column;
